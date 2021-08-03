@@ -1,0 +1,178 @@
+/*====================RESET============================*/
+* {
+  box-sizing: border-box;
+}
+
+/*------------Reset Input Style------------------------*/
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"] {
+  text-align: right;
+}
+input[type="number"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+}
+
+/*====================LAYOUT============================*/
+
+body,
+html {
+  height: 100vh;
+  background: rgb(197, 228, 231);
+  -webkit-font-smoothing: antiabiliased;
+  height: 100vh; /* Note a medida */
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/*====================TEXT============================*/
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 12rem;
+  padding-bottom: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: rgb(0, 71, 75);
+  text-justify: center;
+}
+
+.container {
+  width: 65rem;
+  height: 35rem;
+  background: white;
+  text-align: center;
+  margin-top: 5rem;
+  border-radius: 14px;
+  padding: 2.5rem;
+  flex-wrap: wrap;
+  display: flex;
+
+  p {
+    margin-bottom: 1px;
+    padding: 0;
+    text-align: start;
+    font-size: 1rem;
+  }
+}
+
+input[type="text"] {
+  text-align: right;
+}
+input[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+}
+
+.insert-data {
+  height: 30rem;
+  width: 30rem;
+  background: white;
+}
+.print-data {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 10px;
+  background-color: rgb(0, 71, 75);
+}
+
+.group {
+  margin-left: 0.5rem;
+  margin-right: 3rem;
+  max-width: 400px;
+  margin-top: 1.4rem;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: rgb(0, 71, 75);
+  color: white;
+  height: 3.5rem;
+  width: 7.95rem;
+  display: flex;
+  border: none;
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+  &:hover {
+    background: #26c2ad;
+  }
+}
+
+.custom {
+  color: rgb(0, 71, 75);
+  background: rgb(197, 228, 231);
+  height: 3.5rem;
+  width: 7.95rem;
+  border: none;
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  align-items: center;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+/*================PRINT DATA=================================*/
+.print-data {
+  h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: white;
+  }
+
+  .group {
+    margin-left: 3rem;
+    padding-top: 3rem;
+    /* border: 1px solid #c3c3c3;*/
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3 {
+    color: #26c2a3;
+    font-size: 3.75rem;
+    margin: auto;
+  }
+}
+
+#button-reset {
+  width: 20rem;
+  text-align: center;
+  color: green;
+  background: white;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #26c2ad;
+    color: white;
+  }
+}

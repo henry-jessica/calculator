@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+  <title>{{ title }}</title>
+</head>
+
+<body>
+
+  <!--Header -->
+  <header>
+    <div class="title">
+      <h1>SPLIT</h1>
+      <h1>TTER</h1>
+    </div>
+
+  </header>
+
+
+  <div>
+    <main>
+      <section class="container">
+        <div class="insert-data">
+          <div class="">
+            <div class="group bill">
+              <p>Bill</p>
+              <input id="bill" type="text" class="form-control" placeholder="$"
+                aria-label="Amount (to the nearest dollar)" (input)="getBillInput($event)">
+            </div>
+            <div class="group tip">
+              <p>Select Tip %</p>
+              <div class="flex flex-wrap">
+
+                <button class="btn btn1 btn-primary" type="button" *ngFor="let button of buttons"
+                  (click)="addToExpression(button)">{{ button }}%</button>
+
+                <input type="number" class="custom" placeholder=" {{ tipCustomised }}">
+              </div>
+            </div>
+            <div class="group number-people">
+              <p>Number of People</p>
+              <input type="number" id="quantity-people" class="form-control" placeholder="icon"
+                aria-label="Amount (to the nearest dollar)" (input)="getTotalPeopleInput($event)">
+            </div>
+          </div>
+        </div>
+        <div class="print-data">
+          <div class="tip-amount group">
+            <div>
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <div class="total-result">
+              <h3>{{ tipTotal | number:'1.2-2' }}</h3>
+            </div>
+          </div>
+          <div class="total group">
+            <div>
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <div>
+              <div class="total-person">
+                <h3>{{ totalPerson | number:'1.2-2'}}</h3>
+              </div>
+            </div>
+          </div>
+          <input id="button-reset" class="btn btn1 btn-primary" type="reset" value="Reset">
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
