@@ -1,5 +1,8 @@
 # Calculator
 
+<img src="https://github.com/henry-jessica/assets-/blob/main/active-states.jpg">
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Development server
