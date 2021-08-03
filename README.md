@@ -1,4 +1,4 @@
-# Calculator
+# TIP Calculator
 
 <img src="https://github.com/henry-jessica/assets-/blob/main/active-states.jpg">
 
